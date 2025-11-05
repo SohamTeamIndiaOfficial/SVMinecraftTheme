@@ -15,9 +15,9 @@ installTheme(){
     tar -cvf SVMinecraftTheme.tar.gz pterodactyl
     echo "Installing theme..."
     cd /var/www/pterodactyl
-    rm -r IceMinecraftTheme
+    rm -r SVMinecraftTheme
     git clone https://github.com/SohamTeamIndiaOfficial/SVMinecraftTheme.git
-    cd IceMinecraftTheme
+    cd SVMinecraftTheme
     rm /var/www/pterodactyl/resources/scripts/IceMinecraftTheme.css
     rm /var/www/pterodactyl/resources/scripts/index.tsx
     rm /var/www/pterodactyl/resources/scripts/components/server/console/Console.tsx
