@@ -13,7 +13,7 @@ fix() {
 }
 
 
-echo "Welcome to the IceMinecraftTheme fixer!"
+echo "Welcome to the SVMinecraftTheme fixer!"
 echo "This script will fix the theme if you have an problem with it."
 echo "If you have any problem with the theme, please contact me on Discord: https://discord.nookure.com/"
 
