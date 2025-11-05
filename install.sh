@@ -12,11 +12,11 @@ clear
 
 installTheme(){
     cd /var/www/
-    tar -cvf IceMinecraftTheme.tar.gz pterodactyl
+    tar -cvf SVMinecraftTheme.tar.gz pterodactyl
     echo "Installing theme..."
     cd /var/www/pterodactyl
     rm -r IceMinecraftTheme
-    git clone https://github.com/Angelillo15/IceMinecraftTheme.git
+    git clone https://github.com/SohamTeamIndiaOfficial/SVMinecraftTheme.git
     cd IceMinecraftTheme
     rm /var/www/pterodactyl/resources/scripts/IceMinecraftTheme.css
     rm /var/www/pterodactyl/resources/scripts/index.tsx
@@ -60,14 +60,14 @@ installThemeQuestion(){
 }
 
 repair(){
-    bash <(curl https://raw.githubusercontent.com/Angelillo15/IceMinecraftTheme/main/repair.sh)
+    bash <(curl https://raw.githubusercontent.com/SohamTeamIndiaOfficial/SVMinecraftTheme/refs/heads/main/repair.sh)
 }
 
 restoreBackUp(){
     echo "Restoring backup..."
     cd /var/www/
-    tar -xvf IceMinecraftTheme.tar.gz
-    rm IceMinecraftTheme.tar.gz
+    tar -xvf SVMinecraftTheme.tar.gz
+    rm SVMinecraftTheme.tar.gz
 
     cd /var/www/pterodactyl
     yarn build:production
