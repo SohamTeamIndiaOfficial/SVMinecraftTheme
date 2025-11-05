@@ -30,10 +30,10 @@ repairPanel(){
 }
 
 while true; do
-    read -p "Are you sure that you want to install the theme [y/n]? " yn
+    read -p "Are you sure that you want to install the theme [y/n]? [yes]" yn
     case $yn in
         [Yy]* ) repairPanel; break;;
         [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
+        * ) repairPanel; break;;
     esac
 done
